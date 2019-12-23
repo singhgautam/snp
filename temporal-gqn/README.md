@@ -5,6 +5,7 @@
 - tensorboardX>=1.4
 - torch>=0.4.1
 - torchvision>=0.2.1
+- opencv-python>=4.1.2
 - tensorboard (For visualization of running logs)
 
 ## How to Train
