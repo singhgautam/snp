@@ -20,11 +20,11 @@ DATASET="colorshapes --query-size 2 --nz 4 --num-views 8 --nchannels 3 --recon-l
 # MODEL
 #########
 
-MODEL="tgqn-pd --nc-enc 128 --nc-lstm 128 --nc-context 256 --context-type backward --sssm-num-state 108 --shared-core --concatenate-latents --use-ssm-context \
---q-bernoulli-pick 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 --vis-template vis_templates/snp_pd_template.json"
+#MODEL="tgqn-pd --nc-enc 128 --nc-lstm 128 --nc-context 256 --context-type backward --sssm-num-state 108 --shared-core --concatenate-latents --use-ssm-context \
+#--q-bernoulli-pick 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3 --vis-template vis_templates/snp_pd_template.json"
 
-#MODEL="tgqn --nc-enc 128 --nc-lstm 128 --nc-context 256 --context-type backward --sssm-num-state 108 --shared-core --concatenate-latents --use-ssm-context \
-#--vis-template vis_templates/snp_template.json "
+MODEL="tgqn --nc-enc 128 --nc-lstm 128 --nc-context 256 --context-type backward --sssm-num-state 108 --shared-core --concatenate-latents --use-ssm-context \
+--vis-template vis_templates/snp_template.json "
 
 #MODEL="gqn --nc-enc 128 --nc-lstm 128 --nc-context 256 --shared-core --concatenate-latents \
 #--vis-template vis_templates/gqn_template.json "
