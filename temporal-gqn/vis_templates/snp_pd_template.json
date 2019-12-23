@@ -1,0 +1,183 @@
+{
+  "components":[
+    {
+      "label" : "map_label",
+      "type": "static_text",
+      "details" : {
+        "text": "Map",
+        "img_size": [30,64],
+        "bg_color": "gray",
+        "font_size":25,
+        "font_file":"fonts/cmunbmr.ttf",
+        "font_color": [0,0,0],
+        "text_placement": [10,2]
+      }
+    },
+    {
+      "label" : "action_label",
+      "type": "static_text",
+      "details" : {
+        "text": "A",
+        "img_size": [30,64],
+        "bg_color": "gray",
+        "font_size":25,
+        "font_file":"fonts/cmunbmr.ttf",
+        "font_color": [0,0,0],
+        "text_placement": [20,2]
+      }
+    },
+    {
+      "label" : "context_set_label",
+      "type": "static_text",
+      "details" : {
+        "text": "Context Set",
+        "img_size": [30,150],
+        "bg_color": "white",
+        "font_size":25,
+        "font_file":"fonts/cmunbmr.ttf",
+        "font_color": [0,0,0],
+        "text_placement": [10,2]
+      }
+    },
+    {
+      "label" : "target_set_label",
+      "type": "static_text",
+      "details" : {
+        "text": "Target Set",
+        "img_size": [30,150],
+        "bg_color": "white",
+        "font_size":25,
+        "font_file":"fonts/cmunbmr.ttf",
+        "font_color": [0,0,0],
+        "text_placement": [10,2]
+      }
+    },
+    {
+      "label" : "recon_snp_set_label",
+      "type": "static_text",
+      "details" : {
+        "text": "Reconstruction SNP",
+        "img_size": [30,240],
+        "bg_color": "white",
+        "font_size":25,
+        "font_file":"fonts/cmunbmr.ttf",
+        "font_color": [0,0,0],
+        "text_placement": [10,2]
+      }
+    },
+    {
+      "label" : "recon_pd_set_label",
+      "type": "static_text",
+      "details" : {
+        "text": "Reconstruction PD",
+        "img_size": [30,230],
+        "bg_color": "white",
+        "font_size":25,
+        "font_file":"fonts/cmunbmr.ttf",
+        "font_color": [0,0,0],
+        "text_placement": [10,2]
+      }
+    },
+    {
+      "label" : "gen_snp_set_label",
+      "type": "static_text",
+      "details" : {
+        "text": "Generation SNP",
+        "img_size": [30,200],
+        "bg_color": "white",
+        "font_size":25,
+        "font_file":"fonts/cmunbmr.ttf",
+        "font_color": [0,0,0],
+        "text_placement": [10,2]
+      }
+    },
+
+
+    {
+      "label" : "map",
+      "type": "truncated_imagegrid",
+      "details" : {
+        "img_size": [64, 64],
+        "grid_size": [10,1],
+        "pad_value": 0.2,
+        "padding": 2
+      }
+    },
+    {
+      "label" : "A",
+      "type": "truncated_imagegrid",
+      "details" : {
+        "img_size": [64, 64],
+        "grid_size": [10,1],
+        "pad_value": 0.2,
+        "padding": 2
+      }
+    },
+    {
+      "label" : "C",
+      "type": "truncated_imagegrid",
+      "details" : {
+        "img_size": [64, 64],
+        "grid_size": [10,4],
+        "pad_value": 0.2,
+        "padding": 2
+      }
+    },
+    {
+      "label" : "D",
+      "type": "truncated_imagegrid",
+      "details" : {
+        "img_size": [64, 64],
+        "grid_size": [10,4],
+        "pad_value": 0.2,
+        "padding": 2
+      }
+    },
+    {
+      "label" : "__mu_Y__snp_recon",
+      "type": "truncated_imagegrid",
+      "details" : {
+        "img_size": [64, 64],
+        "grid_size": [10,4],
+        "pad_value": 0.2,
+        "padding": 2
+      }
+    },
+    {
+      "label" : "__mu_Y__pd_recon",
+      "type": "truncated_imagegrid",
+      "details" : {
+        "img_size": [64, 64],
+        "grid_size": [10,4],
+        "pad_value": 0.2,
+        "padding": 2
+      }
+    },
+    {
+      "label" : "__mu_Y__snp_gen",
+      "type": "truncated_imagegrid",
+      "details" : {
+        "img_size": [64, 64],
+        "grid_size": [10,4],
+        "pad_value": 0.2,
+        "padding": 2
+      }
+    }
+  ],
+  "placements" : {
+      "columns":[
+        {"rows":["map_label", "map"]},
+        {"rows":["action_label", "A"]},
+        {"rows":["context_set_label", "C"]},
+        {"rows":["target_set_label", "D"]},
+        {"rows":["recon_snp_set_label", "__mu_Y__snp_recon"]},
+        {"rows":["recon_pd_set_label", "__mu_Y__pd_recon"]},
+        {"rows":["gen_snp_set_label", "__mu_Y__snp_gen"]}
+      ]
+  },
+  "metadata": {
+    "spacing":0,
+    "h_justification":"left",
+    "v_justification":"top"
+  }
+}

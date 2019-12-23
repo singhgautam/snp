@@ -1,0 +1,13 @@
+*.pyc
+*.sw*
+*.pdf
+
+data
+experiments
+experiments*
+cache
+cache*
+.idea
+
+slurm*
+run*
