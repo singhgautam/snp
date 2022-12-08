@@ -2,7 +2,7 @@ absl-py==0.6.1
 astor==0.7.1
 backcall==0.1.0
 bleach==3.0.2
-certifi==2019.9.11
+certifi==2022.12.7
 chardet==3.0.4
 cycler==0.10.0
 decorator==4.3.0
